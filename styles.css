@@ -1,6 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
   background-color: #283149;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 80%;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -95,4 +117,19 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+@media (min-width: 601px) and (max-width: 1085px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
